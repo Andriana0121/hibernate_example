@@ -33,9 +33,4 @@ public class CountryController {
     public ResponseEntity<Country> get(@PathVariable("id") long id){
         return new ResponseEntity<Country>(countryService.get(id), HttpStatus.OK);
     }
-
-    @GetMapping("{id}")
-    public ResponseEntity<Country> getContryById(@PathVariable("id") long countryid){
-
-    }
 }
